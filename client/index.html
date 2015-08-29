@@ -19,8 +19,8 @@
           <li ng-hide="currentUser">
             <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
           </li>
-          <li ng-hide="currentUser">
-            <a ui-sref="test-up" ui-sref-active="active">Test up</a>
+          <li ng-show="currentUser">
+            <a ui-sref="feed" ui-sref-active="active">Test up</a>
           </li>
           <li ng-hide="currentUser">
             <a ui-sref="login" ui-sref-active="active">Log in</a>

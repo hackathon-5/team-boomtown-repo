@@ -13,7 +13,7 @@
     "connector": "mysql"
   },
   "mongoDs": {
-    "host": "demo.strongloop.com",
+    "host": "localhost",
     "port": 27017,
     "database": "getting_started_intermediate",
     "username": "demo",
