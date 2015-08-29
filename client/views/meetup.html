@@ -1,0 +1,25 @@
+<section class="meetup">
+    <div class="container">
+        <div ng-repeat="event in events">
+            <div class="card feed__meetup">
+
+                <img class="feed__meetup__owner-img" src="http://placehold.it/300x300">
+
+                <div class="feed__meetup__subject">
+                    <img class="feed__meetup__icon feed__meetup__icon--type" src="http://placehold.it/36x36">
+                    <span class="feed__meetup__title"><strong>{{event.owner.firstName}} {{event.owner.lastName}}</strong> wants to meet up and <strong>{{event.eventType}}</strong> with <strong>{{event.maxPeople}}
+                        <span ng-show="event.gender===0">guys</span><span ng-show="event.gender===1">girls</span><span ng-show="event.gender===2">people</span></strong></span>
+                </div>
+
+                <div class="feed__meetup__location">
+                    <img class="feed__meetup__icon feed__meetup__icon--location" src="http://placehold.it/10x16">
+                    <span class="feed__meetup__location__copy">Taco Boy at 7:30pm</span>
+                </div>
+
+                <a class="feed__meetup__view-details-btn">View Details</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>

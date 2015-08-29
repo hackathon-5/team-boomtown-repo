@@ -11,9 +11,33 @@
     <base href="/">
   </head>
   <body>
+
   <header class="header">
     <h1 class="header__logo">Micro Meetup</h1>
-  </header>
+      <nav>
+        <ul>
+          <li ng-hide="currentUser">
+            <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="feed" ui-sref-active="active">Feed</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="createEvent" ui-sref-active="active">Create Event</a>
+          </li>
+          <li ng-hide="currentUser">
+            <a ui-sref="meetup-joiner" ui-sref-active="active">Join Event</a>
+          </li>
+          <li ng-hide="currentUser">
+            <a ui-sref="login" ui-sref-active="active">Log in</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="logout" ui-sref-active="active">Log out</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
     
     <main ui-view></main>
 
@@ -28,5 +52,6 @@
     <script src="js/services/auth.js"></script>
     <script src="js/controllers/profile.js"></script>
     <script src="js/controllers/meetup-joiner.js"></script>
+      <script src="js/controllers/meetup-joiner.js"></script>
   </body>
 </html>

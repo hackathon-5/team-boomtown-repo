@@ -28,6 +28,7 @@ angular
         url: '/feed',
         templateUrl: 'views/feed.html',
         controller: 'feedCtrl',
+
       })
       .state('profile', {
         url: '/profile/:username',
@@ -43,6 +44,12 @@ angular
         url: '/joinEvent/:eventId',
         templateUrl: 'views/meetup-joiner.html',
         controller: 'meetup-joinerCtrl',
+      })
+      .state('meetup', {
+        url: '/meetups',
+        templateUrl: 'views/meetup.html',
+        controller: 'meetupCtrl',
+
       })
       .state('signup-success', {
         url: '/sign-up/success',
