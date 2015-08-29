@@ -12,11 +12,19 @@
       "required": true
     },
     "startTime": {
-      "type": "Date",
+      "type": "string",
       "required": true
     },
     "location": {
       "type": "string",
+      "required": true
+    },
+    "startingPoint": {
+      "type": "object",
+      "required": true
+    },
+    "gender": {
+      "type": "number",
       "required": true
     },
     "comments": {

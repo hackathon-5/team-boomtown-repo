@@ -360,7 +360,7 @@
     <!-- Age -->
 
     <div class="form-group">
-      <label for="signup__last-name">Your Age</label>
+      <label for="signup__age">Your Age</label>
       <input type="number" class="form-control" id="signup__age" ng-model="user.age">
     </div>
 
@@ -369,6 +369,13 @@
     <div class="form-group">
       <label for="signup__occupation">Occupation</label>
       <input type="text" class="form-control" id="signup__occupation" ng-model="user.occupation">
+    </div>
+
+    <!-- Location -->
+
+    <div class="form-group">
+      <label for="signup__location">Location</label>
+      <input type="text" class="form-control" id="signup__location" ng-model="user.location">
     </div>
 
     <!-- Email Address -->
@@ -389,7 +396,7 @@
 
     <div class="form-group">
       <label for="signup__description">Short description</label>
-      <textarea class="form-control" rows="3" ng-model="user.description"></textarea>
+      <textarea class="form-control" rows="3" id="signup__description" ng-model="user.description"></textarea>
     </div>
 
     <!-- Submit Button -->

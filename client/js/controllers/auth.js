@@ -33,6 +33,7 @@ angular
       description: 'asdf',
       photo:'asdf',
       occupation:'asdf',
+      location: 'Charleston',
       phoneNumber:'asdf',
       favorites:{
         "ncaaf": true,

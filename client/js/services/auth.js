@@ -36,6 +36,7 @@ angular
           description: user.description,
           photo: user.photo,
           occupation:user.occupation,
+          location: user.location,
           phoneNumber:user.phoneNumber,
           favorites:{
             "ncaaf": user.favorites.ncaaf,

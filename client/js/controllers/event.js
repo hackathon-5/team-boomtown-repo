@@ -22,8 +22,10 @@ angular
       "eventType": 'Bar',
       "maxPeople": 3,
       "startTime": '7:00PM',
-      "location": currentUser.location,
-      "owner": currentUser
+      "gender": 2,
+      "startingPoint": {},
+      "location": $rootScope.currentUser.location,
+      "owner": $rootScope.currentUser
     }
 
     $scope.createEvent = function() {

@@ -1,2 +1,140 @@
-<div>Create an event sucka!</div>
-<div class="well">Your email is {{user.email}}</div>
+<div class="page create">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <form>
+
+                    <!-- Type of event -->
+
+                    <div class="create__type create__section">
+
+                        <h1 class="create__header">What do you want to do?</h1>
+
+                        <div class="create__type__radios row">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="radio create__item-select">
+                                    <input class="" type="radio" name="" value="party" ng-model="event.eventType"> <span>Party!</span>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="radio create__item-select">
+                                    <input class="" type="radio" name="" value="grabDinner" ng-model="event.eventType"> <span>Grab Dinner</span>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="radio create__item-select">
+                                    <input class="" type="radio" name=""  value="casualDrinks"ng-model="event.eventType"> <span>Casual Drinks</span>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="radio create__item-select">
+                                    <input class="" type="radio" name="" value="movie" ng-model="event.eventType"> <span>Movie</span>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="radio create__item-select">
+                                    <input class="" type="radio" name="" value="anything" ng-model="event.eventType"> <span>Up for anything</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Gender -->
+
+                    <div class="create__gender create__section">
+
+                        <h1 class="create__header">Who is this event for?</h1>
+
+                        <div class="create__type__radios row">
+
+                            <div class="col-xs-12 col-sm-4">
+                                <label class="radio create__item-select">
+                                    <img class="create__item-select__img" src="http://placehold.it/20x20">
+                                    <input class="" type="radio" name="" value="0" ng-model="event.gender"> Guys Night
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <label class="radio create__item-select">
+                                    <img class="create__item-select__img" src="http://placehold.it/20x20">
+                                    <input class="" type="radio" name="" value="1" ng-model="event.gender"> Girls Night
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <label class="radio create__item-select">
+                                    <img class="create__item-select__img" src="http://placehold.it/20x20">
+                                    <input class="" type="radio" name="" value="2" ng-model="event.gender"> Everyone is invited
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Event starting time -->
+
+                    <div class="create__starting-time create__section">
+
+                        <h1 class="create__header">Choose a starting time:</h1>
+
+                        <select class="form-control" ng-model="event.startTime">
+                            <option>6:00PM</option>
+                            <option>6:30PM</option>
+                            <option>7:00PM</option>
+                            <option>7:30PM</option>
+                            <option>8:00PM</option>
+                            <option>8:30PM</option>
+                            <option>9:00PM</option>
+                            <option>9:30PM</option>
+                            <option>10:00PM</option>
+                            <option>10:30PM</option>
+                            <option>11:00PM</option>
+                            <option>11:30PM</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Starting Location -->
+
+                    <div class="create__location create__section">
+
+                        <h1 class="create__header">Pick a Starting Point:</h1>
+
+                        <ul class="create__location__suggested-list">
+                            <li class="create__location__suggested" value="{'title':'Hall\'s Chophouse','type':'Downtown Charleston','address':'12 King St.'}" ng-model="event.startingPoint">
+                                <img class="create__location__suggested__img" src="http://www.opentable.com/img/restimages/x6/28387.jpg">
+                                <span class="create__location__suggested__title">Hall's Chophouse</span>
+                                <span class="create__location__suggested__type">Downtown Charleston</span>
+                                <span class="create__location__suggested__address">$$$$</span>
+                            </li>
+                            <li class="create__location__suggested" value="{'title':'Stars','type':'Downtown Charleston','address':'12 King St.'}" ng-model="event.startingPoint">
+                                <img class="create__location__suggested__img" src="http://www.opentable.com/img/restimages/x6/4574.jpg">
+                                <span class="create__location__suggested__title">Stars</span>
+                                <span class="create__location__suggested__type">Downtown Charleston</span>
+                                <span class="create__location__suggested__address">12 King St.</span>
+                            </li>
+                            <li class="create__location__suggested" value="{'title':'The Ordinary','type':'Seafood Restaurant','address':'12 King St.'}" ng-model="event.startingPoint">
+                                <img class="create__location__suggested__img" src="http://placehold.it/60x60">
+                                <span class="create__location__suggested__title">The Ordinary</span>
+                                <span class="create__location__suggested__type">Seafood Restaurant</span>
+                                <span class="create__location__suggested__address">12 King St.</span>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="create__submit">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
