@@ -14,8 +14,6 @@
   <body>
     <header class="header">
       <h1 class="header__logo">Micro Meetup</h1>
-      <!-- <a class="header__link header__link--create" ui-sref="createEvent" ui-sref-active="active"><i class="fa fa-plus"></i></a> -->
-      <a class="header__link header__link--profile" ui-sref="profile" ui-sref-active="active">Me</a>
     </header>
     
     <main ui-view></main>
@@ -32,12 +30,15 @@
     <script src="js/controllers/profile.js"></script>
 
     <section class="feed">
+      
       <div class="container">
 
         <a class="card feed__create-new-btn" ui-sref="createEvent" ui-sref-active="active">
-          <img class="feed__create-new-btn__icon" src="/images/create-new.svg">
+          <img class="feed__create-new-btn__icon" src="http://placehold.it/20x20x">
           Create New Meetup
         </a>
+
+        <span class="feed__meetup-list__title">Meetups in Charleston:</span>
 
         <div class="card feed__meetup">
 
@@ -45,15 +46,51 @@
 
           <div class="feed__meetup__subject">
             <img class="feed__meetup__icon feed__meetup__icon--type" src="http://placehold.it/36x36">
-            <span class="feed__meetup__title"><strong>DJ Fullante</strong> wants to meet up and <strong>grab dinner</strong> with <strong>3 guys</strong></span>
+            <span class="feed__meetup__title"><strong>DJ Fullante</strong> wants to meet up and <strong>grab drinks</strong></span>
           </div>
 
-          <div class="feed__meetup__location">
+          <div class="feed__meetup__details">
             <img class="feed__meetup__icon feed__meetup__icon--location" src="http://placehold.it/10x16">
-            <span class="feed__meetup__location__copy">Taco Boy at 7:30pm</span>
+            <strong class="feed__meetup__details__time">7:30pm</strong><span class="feed__meetup__details__location">Downtown Charleston</span>
           </div>
 
-          <a class="feed__meetup__view-details-btn">View Details</a>
+          <div class="feed__meetup__view-details"><a href="#" class="feed__meetup__view-details__btn">View Details</a></div>
+        
+        </div>
+
+        <div class="card feed__meetup">
+
+          <img class="feed__meetup__owner-img" src="http://placehold.it/300x300">
+
+          <div class="feed__meetup__subject">
+            <img class="feed__meetup__icon feed__meetup__icon--type" src="http://placehold.it/36x36">
+            <span class="feed__meetup__title"><strong>DJ Fullante</strong> wants to meet up and <strong>grab drinks</strong></span>
+          </div>
+
+          <div class="feed__meetup__details">
+            <img class="feed__meetup__icon feed__meetup__icon--location" src="http://placehold.it/10x16">
+            <strong class="feed__meetup__details__time">7:30pm</strong><span class="feed__meetup__details__location">Downtown Charleston</span>
+          </div>
+
+          <div class="feed__meetup__view-details"><a href="#" class="feed__meetup__view-details__btn">View Details</a></div>
+        
+        </div>
+
+        <div class="card feed__meetup">
+
+          <img class="feed__meetup__owner-img" src="http://placehold.it/300x300">
+
+          <div class="feed__meetup__subject">
+            <img class="feed__meetup__icon feed__meetup__icon--type" src="http://placehold.it/36x36">
+            <span class="feed__meetup__title"><strong>DJ Fullante</strong> wants to meet up and <strong>grab drinks</strong></span>
+          </div>
+
+          <div class="feed__meetup__details">
+            <img class="feed__meetup__icon feed__meetup__icon--location" src="http://placehold.it/10x16">
+            <strong class="feed__meetup__details__time">7:30pm</strong><span class="feed__meetup__details__location">Downtown Charleston</span>
+          </div>
+
+          <div class="feed__meetup__view-details"><a href="#" class="feed__meetup__view-details__btn">View Details</a></div>
         
         </div>
 
