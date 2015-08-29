@@ -5087,13 +5087,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-bottom: 30px;
   padding: 0px;
 }
-.create__section {
-  display: inline-block;
-  border: 1px solid #ddd;
-  padding: 30px 15px;
-  margin-bottom: 10px;
-  width: 100%;
-}
 .create__item-select {
   display: block;
   margin: 0px!important;

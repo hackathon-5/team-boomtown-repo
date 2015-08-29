@@ -22,77 +22,26 @@
           <form>
           
             <!-- Type of event -->
-          
-            <div class="create__type create__section">
+
+            <div class="create__type">
             
-              <h1 class="create__header">What do you want to do?</h1>
+              <span class="create__header">What do you want to do tonight?</span>
           
-              <div class="create__type__radios row">
-               <div class="col-xs-12 col-sm-3">
-                 <label class="radio create__item-select">
-                    <input class="" type="radio" name="" id="" ng-model=""> <span>Party!</span>
-                  </label>
-               </div>
-                <div class="col-xs-12 col-sm-3">
-                  <label class="radio create__item-select">
-                    <input class="" type="radio" name="" id="" ng-model=""> <span>Grab Dinner</span>
-                  </label>
-                </div>
-               <div class="col-xs-12 col-sm-3">
-                  <label class="radio create__item-select">
-                   <input class="" type="radio" name="" id="" ng-model=""> <span>Casual Drinks</span>
-                 </label>
-               </div>
-                <div class="col-xs-12 col-sm-3">
-                  <label class="radio create__item-select">
-                    <input class="" type="radio" name="" id="" ng-model=""> <span>Movie</span>
-                  </label>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                  <label class="radio create__item-select">
-                    <input class="" type="radio" name="" id="" ng-model=""> <span>Up for anything</span>
-                  </label>
-                </div>
-              </div>
+              <select class="form-control">
+                <option>- select an activity -</option>
+                <option>party</option>
+                <option>grab dinner</option>
+                <option>grab drinks</option>
+                <option>watch a movie</option>
+              </select>
           
             </div>
-          
-            <!-- Gender -->
-          
-            <div class="create__gender create__section">
-            
-              <h1 class="create__header">Who is this event for?</h1>
-          
-              <div class="create__type__radios row">
-          
-               <div class="col-xs-12 col-sm-4">
-                 <label class="radio create__item-select">
-                    <img class="create__item-select__img" src="http://placehold.it/20x20">
-                    <input class="" type="radio" name="" id="" ng-model=""> Guys Night
-                  </label>
-               </div>
-                <div class="col-xs-12 col-sm-4">
-                  <label class="radio create__item-select">
-                    <img class="create__item-select__img" src="http://placehold.it/20x20">
-                    <input class="" type="radio" name="" id="" ng-model=""> Girls Night
-                  </label>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <label class="radio create__item-select">
-                    <img class="create__item-select__img" src="http://placehold.it/20x20">
-                    <input class="" type="radio" name="" id="" ng-model=""> Everyone is invited
-                  </label>
-                </div>
-          
-              </div>
-          
-            </div>
-          
+
             <!-- Event starting time -->
           
-            <div class="create__starting-time create__section">
+            <div class="create__time">
             
-              <h1 class="create__header">Choose a starting time:</h1>
+              <span class="create__header">What time?</span>
           
               <select class="form-control">
                 <option>6:00PM</option>
@@ -111,45 +60,55 @@
           
             </div>
           
-            <!-- Starting Location -->
+            <div class="create__location-venue create__section">
+            
+              <span class="create__header">Where would you like to meet?</span>
           
-            <div class="create__location create__section">
-          
-              <h1 class="create__header">Suggested Starting Points:</h1>
-          
-               <ul class="create__location__suggested-list">
-                <li class="create__location__suggested">
-                  <img class="create__location__suggested__img" src="http://www.opentable.com/img/restimages/x6/28387.jpg">
-                  <span class="create__location__suggested__title">Hall's Chophouse</span>
-                  <span class="create__location__suggested__type">Downtown Charleston</span>
-                  <span class="create__location__suggested__address">$$$$</span>
-                </li>
-                <li class="create__location__suggested">
-                  <img class="create__location__suggested__img" src="http://www.opentable.com/img/restimages/x6/4574.jpg">
-                  <span class="create__location__suggested__title">Stars</span>
-                  <span class="create__location__suggested__type">Downtown Charleston</span>
-                  <span class="create__location__suggested__address">12 King St.</span>
-                </li>
-                <li class="create__location__suggested">
-                  <img class="create__location__suggested__img" src="http://placehold.it/60x60">
-                  <span class="create__location__suggested__title">The Ordinary</span>
-                  <span class="create__location__suggested__type">Seafood Restaurant</span>
-                  <span class="create__location__suggested__address">12 King St.</span>
-                </li>
-              </ul>
-          
-              <!-- type in location -->
-          
-              <span>Or search for a venue</span>
-          
-              <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="Search for a venue">
+              <div class="create__location__venue">
+                <div class="create__location__venue__img" style="background-image: url('PUTHERE');"></div>
+                <div class="create__location__venue__details">
+                  <span class="create__location__venue__title">Stars</span>
+                  <span class="create__location__venue__type">Rooftop Bar</span>
+                  <span class="create__location__venue__location">Downtown Charleston</span>
+                </div>
+                <label class="radio">
+                  <input class="" type="radio" name="" id="" ng-model=""> <span>Choose this location</span>
+                </label>
               </div>
-          
+
+              <div class="create__location__venue">
+                <div class="create__location__venue__img" style="background-image: url('PUTHERE');"></div>
+                <div class="create__location__venue__details">
+                  <span class="create__location__venue__title">Stars</span>
+                  <span class="create__location__venue__type">Rooftop Bar</span>
+                  <span class="create__location__venue__location">Downtown Charleston</span>
+                </div>
+                <label class="radio">
+                  <input class="" type="radio" name="" id="" ng-model=""> <span>Choose this location</span>
+                </label>
+              </div>
+
             </div>
+
+            <div class="create__question">
+              <span class="create__question__title">Question one title</span>
+              <textarea class="form-control create__question__field" rows="2"></textarea>
+            </div>
+
+            <div class="create__question">
+              <span class="create__question__title">Question one title</span>
+              <textarea class="form-control create__question__field" rows="2"></textarea>
+            </div>
+
+            <div class="create__question">
+              <span class="create__question__title">Question one title</span>
+              <textarea class="form-control create__question__field" rows="2"></textarea>
+            </div>
+
+            <!-- Create Event -->
           
             <div class="create__submit">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Create Event</button>
             </div>
           
           </form>
