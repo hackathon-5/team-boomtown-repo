@@ -22,19 +22,19 @@
   <form>
   
      <div class="signup__basic-info signup__page">
+
+      <span class="mm-container__title">Create Profile</span>
   
        <!-- Name -->
       
       <div class="signup__name">
       
-        <div class="form-group">
-          <label for="signup__name__first-name">First Name</label>
-          <input type="text" class="form-control" id="signup__name__first-name" placeholder="First Name">
+        <div class="form-group left-50">
+          <input placeholder="First Name" type="text" class="form-control" id="signup__name__first-name" placeholder="First Name">
         </div>
         
-        <div class="form-group">
-          <label for="signup__name__last-name">Last Name</label>
-          <input type="text" class="form-control" id="signup__name__last-name" placeholder="Last Name">
+        <div class="form-group right-50">
+          <input placeholder="Last Name" type="text" class="form-control" id="signup__name__last-name" placeholder="Last Name">
         </div>
       
       </div>
@@ -42,15 +42,14 @@
       <!-- Password -->
   
       <div class="form-group">
-        <label for="signup__photo">Paste your profile image url:</label>
-        <input type="text" class="form-control" id="signup__photo" ng-model="">
+        <label for="signup__photo" class="profile-photo">Profile Photo:</label>
+        <input type="text" placeholder="Paste an image URL" class="form-control" id="signup__photo" ng-model="">
       </div>
 
       <!-- Email Address -->
       
       <div class="form-group">
-        <label for="signup__email">Email address</label>
-        <input type="email" class="form-control" id="signup__email" ng-model="">
+        <input placeholder="Email Address" type="email" class="form-control" id="signup__email" ng-model="">
       </div>
       
       <!-- Password -->
