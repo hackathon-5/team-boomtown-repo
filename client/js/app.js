@@ -29,6 +29,11 @@ angular
         templateUrl: 'views/test-up.html',
         controller: 'TestUpCtrl',
       })
+      .state('feed', {
+        url: '/feed',
+        templateUrl: 'views/feed.html',
+        controller: 'feedCtrl',
+      })
       .state('signup-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'
