@@ -1,18 +1,30 @@
+// Base Elements
+@import "less/bootstrap.less";
+@import "less/feed.less";
+@import "less/event.less";
+@import "less/create.less";
+@import "less/profile.less";
+@import "less/page.less";
+
 /*global*/
 * {
   margin:0;
   padding:0;
 }
 body {
-  font-family:'courier new';
-  font-size:1rem;
+  background-color: #fff;
+  font-family: "source sans pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 button {
   background:#eee;
   border:0;
   color:#777;
   cursor:pointer;
-  font-family:'courier new';
   font-size:1rem;
   padding:.5rem;
 }
@@ -103,9 +115,3 @@ main select,
 textarea {
   width:300px;
 }
-
-// Base Elements
-@import "less/bootstrap.less";
-@import "less/feed.less";
-@import "less/event.less";
-@import "less/profile.less";
