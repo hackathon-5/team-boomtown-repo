@@ -11,6 +11,10 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "string",
+      "required": false
+    },
     "gender": {
       "type": "string",
       "required": true
@@ -27,16 +31,12 @@
       "type": "string",
       "required": false
     },
-    "shortDescription": {
+    "description": {
       "type": "string",
       "required": false
     },
     "phoneNumber": {
       "type": "string",
-      "required": false
-    },
-    "pushNotifications": {
-      "type": "boolean",
       "required": false
     },
     "joinedEvents":{
@@ -46,153 +46,139 @@
     "createdEvents": {
       "type": "array"
     },
-    "ncaaf": {
-      "type": "boolean",
-      "required": true
-    },
-    "nfl": {
-      "type": "boolean",
-      "required": true
-    },
-    "ncaab": {
-      "type": "boolean",
-      "required": true
-    },
-    "nba": {
-      "type": "boolean",
-      "required": true
-    },
-    "mlb": {
-      "type": "boolean",
-      "required": true
-    },
-    "nhl": {
-      "type": "boolean",
-      "required": true
-    },
-    "soccer": {
-      "type": "boolean",
-      "required": true
-    },
-    "pga": {
-      "type": "boolean",
-      "required": true
-    },
-    "sportsDontMatter": {
-      "type": "boolean",
-      "required": true
-    },
-    "hipHopRap": {
-      "type": "boolean",
-      "required": true
-    },
-    "rockAlternative": {
-      "type": "boolean",
-      "required": true
-    },
-    "pop": {
-      "type": "boolean",
-      "required": true
-    },
-    "randb": {
-      "type": "boolean",
-      "required": true
-    },
-    "country": {
-      "type": "boolean",
-      "required": true
-    },
-    "latin": {
-      "type": "boolean",
-      "required": true
-    },
-    "edm": {
-      "type": "boolean",
-      "required": true
-    },
-    "actionAdventure": {
-      "type": "boolean",
-      "required": true
-    },
-    "comedy": {
-      "type": "boolean",
-      "required": true
-    },
-    "romance": {
-      "type": "boolean",
-      "required": true
-    },
-    "drama": {
-      "type": "boolean",
-      "required": true
-    },
-    "horrorThrillers": {
-      "type": "boolean",
-      "required": true
-    },
-    "documentaries": {
-      "type": "boolean",
-      "required": true
-    },
-    "classicFilms": {
-      "type": "boolean",
-      "required": true
-    },
-    "americanFood": {
-      "type": "boolean",
-      "required": true
-    },
-    "mexicanFood": {
-      "type": "boolean",
-      "required": true
-    },
-    "asian": {
-      "type": "boolean",
-      "required": true
-    },
-    "mediterraneanGreek": {
-      "type": "boolean",
-      "required": true
-    },
-    "italian": {
-      "type": "boolean",
-      "required": true
-    },
-    "vegetarian": {
-      "type": "boolean",
-      "required": true
-    },
-    "glutenFree": {
-      "type": "boolean",
-      "required": true
-    },
-    "republican": {
-      "type": "boolean",
-      "required": true
-    },
-    "democrat": {
-      "type": "boolean",
-      "required": true
-    },
-    "libertarianOther": {
-      "type": "boolean",
-      "required": true
-    },
-    "politicsDontMatter": {
-      "type": "boolean",
-      "required": true
-    },
-    "smoking": {
-      "type": "boolean",
-      "required": true
-    },
-    "drinking": {
-      "type": "boolean",
-      "required": true
-    },
-    "smokeDrinkDontMatter": {
-      "type": "boolean",
-      "required": true
+    "favorites":{
+      "ncaaf": {
+        "type": "boolean",
+        "required": true
+      },
+      "nfl": {
+        "type": "boolean",
+        "required": true
+      },
+      "ncaab": {
+        "type": "boolean",
+        "required": true
+      },
+      "nba": {
+        "type": "boolean",
+        "required": true
+      },
+      "mlb": {
+        "type": "boolean",
+        "required": true
+      },
+      "nhl": {
+        "type": "boolean",
+        "required": true
+      },
+      "soccer": {
+        "type": "boolean",
+        "required": true
+      },
+      "pga": {
+        "type": "boolean",
+        "required": true
+      },
+      "sportsDontMatter": {
+        "type": "boolean",
+        "required": true
+      },
+      "hipHopRap": {
+        "type": "boolean",
+        "required": true
+      },
+      "rockAlternative": {
+        "type": "boolean",
+        "required": true
+      },
+      "pop": {
+        "type": "boolean",
+        "required": true
+      },
+      "randb": {
+        "type": "boolean",
+        "required": true
+      },
+      "country": {
+        "type": "boolean",
+        "required": true
+      },
+      "latin": {
+        "type": "boolean",
+        "required": true
+      },
+      "edm": {
+        "type": "boolean",
+        "required": true
+      },
+      "actionAdventure": {
+        "type": "boolean",
+        "required": true
+      },
+      "comedy": {
+        "type": "boolean",
+        "required": true
+      },
+      "romance": {
+        "type": "boolean",
+        "required": true
+      },
+      "drama": {
+        "type": "boolean",
+        "required": true
+      },
+      "horrorThrillers": {
+        "type": "boolean",
+        "required": true
+      },
+      "documentaries": {
+        "type": "boolean",
+        "required": true
+      },
+      "classicFilms": {
+        "type": "boolean",
+        "required": true
+      },
+      "americanFood": {
+        "type": "boolean",
+        "required": true
+      },
+      "mexicanFood": {
+        "type": "boolean",
+        "required": true
+      },
+      "asian": {
+        "type": "boolean",
+        "required": true
+      },
+      "mediterraneanGreek": {
+        "type": "boolean",
+        "required": true
+      },
+      "italian": {
+        "type": "boolean",
+        "required": true
+      },
+      "vegetarian": {
+        "type": "boolean",
+        "required": true
+      },
+      "glutenFree": {
+        "type": "boolean",
+        "required": true
+      },
+      "politics": {
+        "type": "string",
+        "required": true
+      },
+      "smoking": {
+        "type": "string",
+        "required": true
+      },
+      "drinking": {
+        "type": "string",
+        "required": true
+      }
     }
   },
   "validations": [],
