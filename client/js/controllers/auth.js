@@ -10,7 +10,7 @@ angular
     $scope.login = function() {
       AuthService.login($scope.user.email, $scope.user.password)
         .then(function() {
-          $state.go('feed');
+          $state.go('add-review');
         });
     };
   }])
@@ -18,20 +18,20 @@ angular
       function($scope, AuthService, $state) {
     AuthService.logout()
       .then(function() {
-        $state.go('login');
+        $state.go('all-reviews');
       });
   }])
   .controller('SignUpController', ['$scope', 'AuthService', '$state',
       function($scope, AuthService, $state) {
     $scope.user = {
-      email: 'username',
-      password: 'abc123'
+      email: 'baz@qux.com',
+      password: 'bazqux'
     };
 
     $scope.register = function() {
       AuthService.register($scope.user.email, $scope.user.password)
         .then(function() {
-          $state.transitionTo('feed');
+          $state.transitionTo('signup-success');
         });
     };
   }]);

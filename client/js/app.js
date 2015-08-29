@@ -4,7 +4,7 @@ angular
     'lbServices'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
-      $urlRouterProvider) {
+      $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('forbidden', {
         url: '/forbidden',
@@ -17,20 +17,23 @@ angular
       })
       .state('logout', {
         url: '/logout',
-        controller: 'AuthLogoutController',
-        authenticate: true
+        controller: 'AuthLogoutController'
       })
-      .state('signup', {
-        url: '/signup',
-        templateUrl: 'views/signup.html',
+      .state('sign-up', {
+        url: '/sign-up',
+        templateUrl: 'views/sign-up-form.html',
         controller: 'SignUpController',
       })
-      .state('feed', {
-        url: '/feed',
-        templateUrl: 'views/feed.html',
-        authenticate: true
+      .state('test-up', {
+        url: '/test-up',
+        templateUrl: 'views/test-up.html',
+        controller: 'TestUpCtrl',
+      })
+      .state('signup-success', {
+        url: '/sign-up/success',
+        templateUrl: 'views/sign-up-success.html'
       });
-    $urlRouterProvider.otherwise('all-reviews');
+    $urlRouterProvider.otherwise('sign-up');
   }])
   .run(['$rootScope', '$state', function($rootScope, $state) {
     $rootScope.$on('$stateChangeStart', function(event, next) {

@@ -3,10 +3,22 @@
     "name": "db",
     "connector": "memory"
   },
-  "mongo": {
-    "host": "127.0.0.1",
-    "database": "micro_meetup",
-    "name": "mongo",
+  "mysqlDs": {
+    "host": "demo.strongloop.com",
+    "port": 3306,
+    "database": "getting_started_intermediate",
+    "username": "demo",
+    "password": "L00pBack",
+    "name": "mysqlDs",
+    "connector": "mysql"
+  },
+  "mongoDs": {
+    "host": "demo.strongloop.com",
+    "port": 27017,
+    "database": "getting_started_intermediate",
+    "username": "demo",
+    "password": "L00pBack",
+    "name": "mongoDs",
     "connector": "mongodb"
   }
 }
