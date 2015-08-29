@@ -32,7 +32,7 @@
       "required": false
     },
     "owner": {
-      "type": "string",
+      "type": "object",
       "required": true
     },
     "joiners": {

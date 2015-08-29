@@ -1,17 +1,14 @@
 angular
   .module('app')
-  .factory('AuthService', ['Meeter', '$q', '$rootScope', function(User, $q,
+  .factory('AuthService', ['Meeter', '$q', '$rootScope', function(Meeter, $q,
       $rootScope) {
     function login(email, password) {
-      return User
+      return Meeter
         .login({email: email, password: password})
         .$promise
         .then(function(response) {
-          $rootScope.currentUser = {
-            id: response.user.id,
-            tokenId: response.id,
-            email: email
-          };
+          $rootScope.currentUser = response.user;
+          console.log(response.user);
         });
     }
 

@@ -19,11 +19,11 @@ angular
     //console.log(maxTime)
 
     $scope.event = {
-      "eventType": 'Bar',
+      "eventType": 'Party',
       "maxPeople": 3,
       "startTime": '7:00PM',
       "gender": 2,
-      "startingPoint": {},
+      "startingPoint": {'title':'Stars','type':'Downtown Charleston','address':'12 King St.'},
       "location": $rootScope.currentUser.location,
       "owner": $rootScope.currentUser
     }
