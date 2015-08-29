@@ -13,7 +13,7 @@ angular
     }
 
     function logout() {
-      return User
+      return Meeter
        .logout()
        .$promise
        .then(function() {
@@ -22,7 +22,7 @@ angular
     }
 
     function register(user) {
-      return User
+      return Meeter
         .create({
           email: user.email,
           password: user.password,
@@ -30,46 +30,7 @@ angular
           firstName: user.firstName,
           lastName: user.lastName,
           gender: user.gender,
-          description: user.description,
           photo: user.photo,
-          occupation:user.occupation,
-          location: user.location,
-          phoneNumber:user.phoneNumber,
-          favorites:{
-            "ncaaf": user.favorites.ncaaf,
-            "nfl": user.favorites.nfl,
-            "ncaab": user.favorites.ncaab,
-            "nba": user.favorites.nba,
-            "mlb": user.favorites.mlb,
-            "nhl": user.favorites.nhl,
-            "soccer": user.favorites.soccer,
-            "pga": user.favorites.pga,
-            "sportsDontMatter": user.favorites.sportsDontMatter,
-            "hipHopRap": user.favorites.hipHopRap,
-            "rockAlternative": user.favorites.rockAlternative,
-            "pop": user.favorites.pop,
-            "randb": user.favorites.randb,
-            "country": user.favorites.country,
-            "latin": user.favorites.latin,
-            "edm": user.favorites.edm,
-            "actionAdventure": user.favorites.actionAdventure,
-            "comedy": user.favorites.comedy,
-            "romance": user.favorites.romance,
-            "drama": user.favorites.drama,
-            "horrorThrillers": user.favorites.horrorThrillers,
-            "documentaries": user.favorites.documentaries,
-            "classicFilms": user.favorites.classicFilms,
-            "americanFood": user.favorites.americanFood,
-            "mexicanFood": user.favorites.mexicanFood,
-            "asian": user.favorites.asian,
-            "mediterraneanGreek":user.favorites.mediterraneanGreek,
-            "italian": user.favorites.italian,
-            "vegetarian": user.favorites.vegetarian,
-            "glutenFree": user.favorites.glutenFree,
-            "politics": user.favorites.politics,
-            "smoking": user.favorites.smoking,
-            "drinking": user.favorites.drinking,
-          }
        })
        .$promise;
     }
