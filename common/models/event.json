@@ -12,7 +12,7 @@
       "required": true
     },
     "startTime": {
-      "type": "string",
+      "type": "Date",
       "required": true
     },
     "location": {
@@ -20,7 +20,7 @@
       "required": true
     },
     "comments": {
-      "type": "string",
+      "type": "object",
       "required": false
     },
     "owner": {
