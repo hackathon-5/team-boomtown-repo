@@ -39,6 +39,11 @@ angular
         templateUrl: 'views/createEvent.html',
         controller: 'eventCtrl',
       })
+      .state('meetup-joiner', {
+        url: '/joinEvent/:eventId',
+        templateUrl: 'views/meetup-joiner.html',
+        controller: 'meetup-joinerCtrl',
+      })
       .state('signup-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'

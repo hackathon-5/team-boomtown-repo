@@ -2,6 +2,17 @@ angular
   .module('app')
   .factory('AuthService', ['Meeter', '$q', '$rootScope', function(Meeter, $q,
       $rootScope) {
+
+    function eventData() {
+      return {
+        image1: "http://",
+        image2: "http://",
+        image3: "http://",
+        question1: "Question",
+        question2: "Question",
+        question3: "Question",
+      };
+    }
     function login(email, password) {
       return Meeter
         .login({email: email, password: password})
@@ -36,6 +47,7 @@ angular
     }
 
     return {
+      eventData: eventData,
       login: login,
       logout: logout,
       register: register

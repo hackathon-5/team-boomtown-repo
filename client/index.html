@@ -22,10 +22,10 @@
             <a ui-sref="feed" ui-sref-active="active">Feed</a>
           </li>
           <li ng-show="currentUser">
-            <a ui-sref="profile" ui-sref-active="active">Profile</a>
-          </li>
-          <li ng-show="currentUser">
             <a ui-sref="createEvent" ui-sref-active="active">Create Event</a>
+          </li>
+          <li ng-hide="currentUser">
+            <a ui-sref="meetup-joiner" ui-sref-active="active">Join Event</a>
           </li>
           <li ng-hide="currentUser">
             <a ui-sref="login" ui-sref-active="active">Log in</a>
@@ -49,5 +49,6 @@
     <script src="js/controllers/feed.js"></script>
     <script src="js/services/auth.js"></script>
     <script src="js/controllers/profile.js"></script>
+    <script src="js/controllers/meetup-joiner.js"></script>
   </body>
 </html>
