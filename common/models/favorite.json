@@ -1,50 +1,12 @@
 {
-  "name": "Meeter",
-  "base": "User",
+  "name": "Favorite",
+  "base": "PersistedModel",
   "idInjection": true,
   "properties": {
-    "firstName": {
-      "type": "string",
-      "required": true
-    },
-    "lastName": {
-      "type": "string",
-      "required": true
-    },
-    "gender": {
-      "type": "string",
-      "required": true
-    },
-    "age": {
+    "id": {
       "type": "number",
-      "required": true
-    },
-    "occupation": {
-      "type": "string",
-      "required": false
-    },
-    "photo": {
-      "type": "string",
-      "required": false
-    },
-    "shortDescription": {
-      "type": "string",
-      "required": false
-    },
-    "phoneNumber": {
-      "type": "string",
-      "required": false
-    },
-    "pushNotifications": {
-      "type": "boolean",
-      "required": false
-    },
-    "joinedEvents":{
-      "type": "array",
-      "required": false
-    },
-    "createdEvents": {
-      "type": "array"
+      "required": true,
+      "id":1
     },
     "ncaaf": {
       "type": "boolean",

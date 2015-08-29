@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .controller('createEventCtrl','$rootScope', ['$scope', function($scope, $rootScope) {
+  .controller('createEventCtrl', ['$scope','$rootScope', function($scope, $rootScope) {
     //$scope.reviews = Review.find({
     //  filter: {
     //    include: [

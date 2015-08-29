@@ -3,10 +3,6 @@
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
-    "id": {
-      "type": "string",
-      "id": 1
-    },
     "eventType": {
       "type": "string",
       "required": true
@@ -25,22 +21,18 @@
     },
     "comments": {
       "type": "string",
+      "required": false
+    },
+    "owner": {
+      "type": "string",
       "required": true
+    },
+    "joiners": {
+      "type": "array"
     }
   },
   "validations": [],
-  "relations": {
-    "owner": {
-      "type": "belongsTo",
-      "model": "Meeter",
-      "foreignKey": ""
-    },
-    "attendees": {
-      "type": "hasMany",
-      "model": "Meeter",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "READ",
