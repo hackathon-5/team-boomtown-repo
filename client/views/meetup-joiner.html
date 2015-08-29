@@ -1,0 +1,60 @@
+<div class="meetup-pg meetup--joiner">
+
+    <div class="container">
+
+        <div class="meetup card">
+
+            <section class="meetup__subject">
+                <div class="meetup__subject__icons">
+                    <img class="meetup__subject__owner-img" src="http://placehold.it/40x40">
+                    <img class="meetup__subject__type-icon" src="http://placehold.it/40x40">
+                </div>
+                <div class="meetup__subject__copy">
+                    <p><span class="meetup__subject__copy__owner-name">{{event.owner.firstName}}</span> wants to meet up and <span class="meetup__subject__copy__activity">{{event.eventType}}</span></p>
+                </div>
+            </section>
+
+            <ul class="meetup__details">
+                <li class="meetup__details__time">{{event.startTime}}</li>
+                <li class="meetup__details__location-title">{{event.startingPoint.title}}</li>
+                <li class="meetup__details__location-area">{{event.startingPoint.type}}</li>
+                <li class="meetup__details__directions"><a href="{{event.startingPoint.address}}" class="meetup__details__directions__link">Get Directions</a></li>
+            </ul>
+            <section class="meetup__attendees">
+                <div class="meetup__attendees">
+                    <div ng-repeat="item in event.joiners">
+
+                        <div class="meetup__attendee">
+                            <div class="meetup__attendee__details">
+                                <img src="http://placehold.it/40x40" class="meetup__attendee__img">
+                                <span class="meetup__antendee__name">DJ Fullante</span>
+                            </div>
+                            <ul class="meetup__attendee__questions">
+                                <li class="meetup__attendee__question">
+                                    <span class="meetup__attendee__question__title">What are some your interests / hobbies?</span>
+                                    <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                                <li class="meetup__attendee__question">
+                                    <span class="meetup__attendee__question__title">What's one surprising fact about you?</span>
+                                    <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                                <li class="meetup__attendee__question">
+                                    <span class="meetup__attendee__question__title">What are some of your favorite TV shows?</span>
+                                    <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="meetup__action">
+                <a href="#" class="btn btn--join">Join Event</a>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
