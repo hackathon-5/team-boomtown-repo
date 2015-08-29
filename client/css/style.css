@@ -4891,6 +4891,156 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     display: none !important;
   }
 }
+.feed {
+  background-color: #ebebeb;
+  padding: 20px 0px;
+  min-height: 410px;
+}
+.feed__create-new-btn {
+  background-color: #fff;
+}
+.card {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.125);
+}
+.card:hover {
+  text-decoration: none;
+}
+.feed__create-new-btn {
+  padding: 12px;
+  font-weight: 600;
+  padding-left: 40px;
+}
+.feed__create-new-btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.feed__create-new-btn__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.feed__meetup__owner-img {
+  width: 100%;
+  height: auto;
+}
+.feed__meetup__icon {
+  position: absolute;
+  left: 0px;
+}
+.feed__meetup__icon--type {
+  width: 36px;
+  height: 36px;
+  left: 12px;
+  border-radius: 50%;
+}
+.feed__meetup__icon--location {
+  width: 10px;
+  height: 16px;
+  top: 0px;
+  left: 26px;
+}
+.feed__meetup__subject {
+  padding: 12px;
+  min-height: 56px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 0px;
+}
+.feed__meetup__title {
+  font-size: 16px;
+  color: rgba(8, 40, 58, 0.6);
+}
+.feed__meetup__title strong {
+  font-weight: normal;
+  color: #08283a;
+}
+.feed__meetup__location {
+  padding: 0px 12px 20px 60px;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 60px;
+}
+.feed__meetup__location__copy {
+  color: #a4a4a4;
+}
+.feed__meetup__view-details-btn {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  padding: 0px 12px;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+}
+.feed__meetup__view-details-btn:hover {
+  color: #2a8fd3;
+  text-decoration: none;
+  cursor: pointer;
+}
+.feed__meetup__bottom__spots {
+  color: #d9534f;
+  padding: 0px 12px;
+  display: none;
+}
+.feed__meetup__bottom__spots:hover {
+  color: #d9534f;
+}
+.meetup-pg {
+  padding: 20px 0px;
+  background-color: #ebebeb;
+}
+.meetup {
+  padding: 20px 25px;
+}
+.header {
+  background-color: rgba(42, 143, 211, 0.86);
+  height: 70px;
+  position: relative;
+  color: #fff;
+}
+.header__logo {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  margin: 0px auto;
+  width: 100%;
+}
+.header__link {
+  color: #fff;
+  font-size: 20px;
+  line-height: 70px;
+  padding: 0px 20px;
+}
+.header__link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.header__link--create {
+  float: left;
+}
+.header__link--profile {
+  float: right;
+}
 .create__header {
   font-size: 16px;
   text-align: left;
@@ -4957,106 +5107,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 0;
 }
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: "source sans pro", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #808080;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-}
-button {
-  background: #eee;
-  border: 0;
-  color: #777;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: .5rem;
-}
-button:active {
-  background: #ddd;
-}
-[disabled] {
-  background: #eee;
-  color: #ccc;
-}
-fieldset {
-  color: #777;
-  padding: 1rem;
-}
-fieldset legend {
-  border: 1px solid #777;
-  padding: 0 .5rem;
-}
-label {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-  width: 200px;
-}
-select {
-  background: #ddd;
-  text-indent: 0.01px;
-  text-overflow: "";
-}
-p {
-  padding: 1rem;
-}
-/*header*/
-body > header {
-  border-bottom: 1px solid #ccc;
-}
-body > header h1 {
-  font-size: 2rem;
-  padding: 1rem 1rem 0 1rem;
-}
-body > header h2 {
-  font-size: 1rem;
-  padding: 0 1rem;
-}
-/*nav*/
-body > header nav {
-  padding: 1rem;
-}
-body > header nav li {
-  display: inline-block;
-  padding-bottom: .5rem;
-}
-body > header nav li a {
-  color: #777;
-  padding: .5rem;
-  text-decoration: none;
-}
-body > header nav li a.active {
-  background: #eee;
-}
-/*main*/
-main section {
-  padding: 1rem;
-}
-main section article {
-  padding-bottom: 2rem;
-}
-main section article h1 {
-  font-size: 1.5rem;
-}
-main section article h2 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-/*main form*/
-main input,
-select,
-textarea {
-  background: #ddd;
-  border: 0;
-  display: inline-block;
-  font-family: 'courier new';
-  margin-bottom: 1rem;
-  padding: .5rem;
-  vertical-align: middle;
-}
-main select,
-textarea {
-  width: 300px;
 }
