@@ -3,8 +3,8 @@ angular
   .controller('AuthLoginController', ['$scope', 'AuthService', '$state',
       function($scope, AuthService, $state) {
     $scope.user = {
-      email: 'foo@bar.com',
-      password: 'foobar'
+      email: 'briceayres@gmail.com',
+      password: 'test'
     };
 
     $scope.login = function() {
@@ -24,8 +24,8 @@ angular
   .controller('SignUpController', ['$scope', 'AuthService', '$state',
       function($scope, AuthService, $state) {
     $scope.user = {
-      email: 'baz@qux.com',
-      password: 'bazqux'
+      email: 'briceayres@gmail.com',
+      password: 'test'
     };
 
     $scope.register = function() {

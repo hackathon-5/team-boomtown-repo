@@ -2,10 +2,54 @@
   "name": "Meeter",
   "base": "User",
   "idInjection": true,
-  "properties": {},
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "occupation": {
+      "type": "string",
+      "required": false
+    },
+    "photo": {
+      "type": "string",
+      "required": false
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": false
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": false
+    },
+    "pushNotifications": {
+      "type": "boolean",
+      "required": false
+    }
+  },
   "validations": [],
   "relations": {
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": []
 }

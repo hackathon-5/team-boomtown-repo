@@ -34,6 +34,11 @@ angular
         templateUrl: 'views/feed.html',
         controller: 'feedCtrl',
       })
+      .state('profile', {
+        url: '/profile/:username',
+        templateUrl: 'views/profile.html',
+        controller: 'profileCtrl',
+      })
       .state('signup-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'
