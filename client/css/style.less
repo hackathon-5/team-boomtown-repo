@@ -1,12 +1,12 @@
 // Base Elements
-@import "less/bootstrap.less";
-@import "less/feed.less";
-@import "less/meetup.less";
-@import "less/header.less";
-@import "less/event.less";
-@import "less/create.less";
-@import "less/profile.less";
-@import "less/page.less";
+@import "less/_bootstrap.less";
+@import "less/_forms.less";
+@import "less/_header.less";
+@import "less/pg-feed.less";
+@import "less/pg-index.less";
+@import "less/pg-join-event.less";
+@import "less/pg-signup.less";
+@import "less/pg-view-event.less";
 
 /*global*/
 * {
@@ -21,5 +21,13 @@ body {
   color: #808080;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+}
+
+.mm-container {
+	padding: 20px 0px;
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	margin: 0px auto;
 }
 

@@ -5,83 +5,77 @@
     <title>loopback-getting-started-intermediate</title>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 
     <base href="/">
   </head>
   <body>
 
+    <header class="header">
+      <h1 class="header__logo">Micro Meetup</h1>
+    </header>
+
 <!-- Start signup form -->
 
-<form>
+<div class="mm-container signup">
 
-  <!-- 1. Sports -->
-
-
-  <!-- 7. Basic Info -->
-
-  <div class="signup__basic-info signup__page">
-
-    <h4>Last part! Give Us Your Basic Info</h4>
-
-    <!-- Name -->
-    
-    <div class="signup__name">
-    
-      <div class="form-group">
-        <label for="signup__name__first-name">First Name</label>
-        <input type="text" class="form-control" id="signup__name__first-name" placeholder="First Name">
+  <form>
+  
+     <div class="signup__basic-info signup__page">
+  
+       <!-- Name -->
+      
+      <div class="signup__name">
+      
+        <div class="form-group">
+          <label for="signup__name__first-name">First Name</label>
+          <input type="text" class="form-control" id="signup__name__first-name" placeholder="First Name">
+        </div>
+        
+        <div class="form-group">
+          <label for="signup__name__last-name">Last Name</label>
+          <input type="text" class="form-control" id="signup__name__last-name" placeholder="Last Name">
+        </div>
+      
       </div>
+
+      <!-- Password -->
+  
+      <div class="form-group">
+        <label for="signup__photo">Paste your profile image url:</label>
+        <input type="text" class="form-control" id="signup__photo" ng-model="">
+      </div>
+
+      <!-- Email Address -->
       
       <div class="form-group">
-        <label for="signup__name__last-name">Last Name</label>
-        <input type="text" class="form-control" id="signup__name__last-name" placeholder="Last Name">
+        <label for="signup__email">Email address</label>
+        <input type="email" class="form-control" id="signup__email" ng-model="">
       </div>
-    
+      
+      <!-- Password -->
+      
+      <div class="form-group left-50">
+         <input type="password" placeholder="Password" class="form-control" id="signup__password" ng-model="">
+      </div>
+
+       <div class="form-group right-50">
+        <input type="password" class="form-control" placeholder="Confirm Password" id="signup__password" ng-model="">
+      </div>
+  
+      <!-- Submit Button -->
+      
+      <div class="signup__submit">
+        <button type="submit" class="signup__submit__btn">Finish Profile</button>
+      </div>
+  
     </div>
-    
-    <!-- Gender Select -->
-    
-    <div class="signup__gender">
-      <label class="radio-inline">
-        <input class="signupgender__option" type="radio" name="genderSelect" id="genderRadio" ng-model="male"> Male
-      </label>
-      <label class="radio-inline">
-        <input class="signup__option" type="radio" name="genderSelect" id="genderRadio2" ng-model="female"> Female
-      </label>
-    </div>
-    
-    <!-- Email Address -->
-    
-    <div class="form-group">
-      <label for="signup__email">Email address</label>
-      <input type="email" class="form-control" id="signup__email" ng-model="">
-    </div>
-    
-    <!-- Password -->
-    
-    <div class="form-group">
-      <label for="signup__password">Password</label>
-      <input type="password" class="form-control" id="signup__password" ng-model="">
-    </div>
+  
+    <!-- End Basic Info -->
+  
+  </form>
 
-    <!-- Password -->
-
-    <div class="form-group">
-      <label for="signup__photo">Password</label>
-      <input type="password" class="form-control" id="signup__photo" ng-model="">
-    </div>
-
-    <!-- Submit Button -->
-    
-    <button type="submit" class="btn btn-default">Submit</button>
-
-  </div>
-
-  <!-- End Basic Info -->
-
-</form>
+</div>
 
 </body>
 </html>
