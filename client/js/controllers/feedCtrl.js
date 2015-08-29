@@ -9,4 +9,6 @@ angular
     //    ]
     //  }
     //});
+
+    $scope.test = ["one", "two", "three"];
   }])
