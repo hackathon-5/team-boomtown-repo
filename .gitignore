@@ -1,14 +1,5 @@
 nodemodules
 .idea
 node_modules
-client/js/services/auth.js
 
-client/js/controllers/meetup-joiner.js
 
-client/js/app.js
-
-client/js/services/auth.js
-
-*.js
-
-client/js/app.js
