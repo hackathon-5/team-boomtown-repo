@@ -12,7 +12,7 @@ angular
     $scope.loadEvent = Event.find({
       filter: {
         where: {
-          id: $scope.eventId
+          id: $stateParams.eventId
         }
       }
     })

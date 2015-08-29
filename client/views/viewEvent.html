@@ -18,38 +18,19 @@
                 <li class="meetup__details__time">{{event.startTime}}</li>
                 <li class="meetup__details__location-title">Stars</li>
                 <li class="meetup__details__location-area">Downtown Charleston</li>
-                <li class="meetup__details__directions"><a href="#" class="meetup__details__directions__link">Get Directions</a></li>
+                <li class="meetup__details__directions"><a href="https://www.google.com/maps?daddr=1210+King+Street+Charleston" target="_blank" class="meetup__details__directions__link">Get Directions</a></li>
             </ul>
             <section class="meetup__attendees">
 
                 <div class="meetup__attendees">
 
-                    <div class="meetup__attendee">
-                        <div class="meetup__attendee__details">
-                            <img src="http://placehold.it/40x40" class="meetup__attendee__img">
-                            <span class="meetup__antendee__name">{{event.owner.firstName}} {{even.owner.lastName}}</span>
-                        </div>
-                        <ul class="meetup__attendee__questions">
-                            <li class="meetup__attendee__question">
-                                <span class="meetup__attendee__question__title">What are some your interests / hobbies?</span>
-                                <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </li>
-                            <li class="meetup__attendee__question">
-                                <span class="meetup__attendee__question__title">What's one surprising fact about you?</span>
-                                <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </li>
-                            <li class="meetup__attendee__question">
-                                <span class="meetup__attendee__question__title">What are some of your favorite TV shows?</span>
-                                <p class="meetup__attendee__question__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </li>
-                        </ul>
-                    </div>
+
 
                 </div>
             </section>
 
             <section class="meetup__action">
-                <a href="#" class="btn btn--join">Join Event</a>
+                <a href="#/joinEvent/{{eventId}}" class="btn btn--join">Join Event</a>
             </section>
 
         </div>

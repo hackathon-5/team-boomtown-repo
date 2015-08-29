@@ -1,30 +1,25 @@
 <div class="join">
-
+    <form>
     <div class="join__question">
-        <span class="create__question__title">Question one title</span>
-        <textarea class="form-control create__question__field" rows="2"></textarea>
+        <span class="create__question__title">What are some of your interests?</span>
+        <textarea class="form-control create__question__field" rows="2" ng-model="questions.one"></textarea>
     </div>
 
     <div class="join__question">
-        <span class="create__question__title">Question one title</span>
-        <textarea class="form-control create__question__field" rows="2"></textarea>
+        <span class="create__question__title">What is one surprising fact about you?</span>
+        <textarea class="form-control create__question__field" rows="2" ng-model="questions.two"></textarea>
     </div>
 
     <div class="join__question">
-        <span class="join__question__title">Question one title</span>
-        <textarea class="form-control join__question__field" rows="2"></textarea>
+        <span class="join__question__title">What are some of your favorite movies/ tv shows?</span>
+        <textarea class="form-control join__question__field" rows="2" ng-model="questions.three"></textarea>
     </div>
 
     <!-- join Event -->
 
     <div class="join__submit">
-        <button type="submit" class="btn btn-primary">Join Event</button>
+        <button type="submit" class="btn btn-primary" ng-click="joinEvent()">Join Event</button>
     </div>
 
     </form>
-</div>
-</div>
-
-</div>
-
 </div>
