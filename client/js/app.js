@@ -39,6 +39,11 @@ angular
         templateUrl: 'views/profile.html',
         controller: 'profileCtrl',
       })
+      .state('createEvent', {
+        url: '/createEvent',
+        templateUrl: 'views/createEvent.html',
+        controller: 'createEventCtrl',
+      })
       .state('signup-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'

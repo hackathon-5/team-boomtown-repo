@@ -29,5 +29,9 @@
   "Meeter": {
     "dataSource": "mongoDs",
     "public": true
+  },
+  "Event": {
+    "dataSource": "mongoDs",
+    "public": true
   }
 }

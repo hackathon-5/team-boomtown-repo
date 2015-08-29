@@ -30,6 +30,16 @@
   },
   "validations": [],
   "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "Meeter",
+      "foreignKey": ""
+    },
+    "attendees": {
+      "type": "hasMany",
+      "model": "Meeter",
+      "foreignKey": ""
+    }
   },
   "acls": [
     {
